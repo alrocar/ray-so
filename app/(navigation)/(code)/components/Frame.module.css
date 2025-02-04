@@ -915,47 +915,85 @@
 }
 
 .tinybirdFrame {
-  background: #000000; /* Adjust to match Tinybird's brand */
+  --pattern-color: rgba(45, 43, 43, 0.1); /* #2D2B2B with opacity */
+  background-color: #e8e3d9;
+  background-image: linear-gradient(45deg, var(--pattern-color) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--pattern-color) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--pattern-color) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--pattern-color) 75%);
+  background-position:
+    0 0,
+    0 2px,
+    2px -2px,
+    -2px 0px;
+  background-size: 4px 4px;
+  font-family: var(--font-pressstart2p);
+}
+
+.tinybirdWindowBorder {
+  position: absolute;
+  z-index: -1;
+  border-bottom: 5px solid #2d2b2b;
+  inset: 0;
+  translate: 0 -11px;
+  /* background: #D9D4CA; */
 }
 
 .tinybirdWindow {
   position: relative;
   z-index: 1;
-  border-radius: 12px;
-  background: #070a08; /* Adjust background color */
+  background: #ffffff;
+  /* border: 6px solid #2D2B2B; */
+  box-shadow: inset 0 0 0 4px #2d2b2b; /* Replace border with inset box-shadow */
 }
 
 .tinybirdHeader {
   display: flex;
-  height: 40px;
+  height: 32px;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #141818;
-  background: #010201;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  gap: 12px;
+  justify-content: flex-start;
+  padding: 0 12px;
+  border: 5px solid #2d2b2b;
+  background: #d9d4ca;
+  gap: 8px;
+}
+
+.tinybirdCircle {
+  width: 12px;
+  height: 12px;
+  border: 4px solid #2d2b2b;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .tinybirdFileName {
-  /* Similar to other fileName styles */
   position: relative;
   display: grid;
-  height: 40px;
   align-items: center;
-  color: #your-color;
+  margin-bottom: -2px;
+  color: #2d2b2b;
+  font-family: var(--font-pressstart2p);
   font-size: 12px;
-  line-height: 40px;
+  font-weight: 700;
+
+  > input {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  > input:focus + span {
+    display: block;
+  }
 }
 
 .tinybirdFrameLightMode {
-  background: #your-light-background;
+  /* We'll use the same style for both modes */
+  background: #e8e3d9;
 
   .tinybirdWindow {
-    background: #ffffff;
+    background: #e8e3d9;
   }
 
   .tinybirdHeader {
-    background: #fcfcfc;
+    background: #d9d4ca;
   }
 }

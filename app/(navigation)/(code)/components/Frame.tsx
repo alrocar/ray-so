@@ -273,6 +273,8 @@ const TinybirdFrame = () => {
       {!showBackground && <div data-ignore-in-export className={styles.transparentPattern}></div>}
       <div className={styles.tinybirdWindow}>
         <div className={styles.tinybirdHeader}>
+          <div className={styles.tinybirdCircle} />
+          <div className={styles.tinybirdCircle} />
           <div className={classNames(styles.fileName, styles.tinybirdFileName)} data-value={fileName}>
             <input
               type="text"
@@ -282,10 +284,11 @@ const TinybirdFrame = () => {
               tabIndex={-1}
               size={1}
             />
-            {fileName.length === 0 ? <span>Untitled-1</span> : null}
+            <span>{fileName || "Untitled-1"}</span>
           </div>
         </div>
         <Editor />
+        <div className={styles.tinybirdWindowBorder} />
       </div>
     </div>
   );
