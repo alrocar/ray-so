@@ -923,7 +923,7 @@
 .tinybirdWindow {
   position: relative;
   z-index: 1;
-  border: 2px solid #c2c2c2;
+  border: 1px solid #c2c2c2;
   border-bottom: none;
   background: #0a0a0a;
   clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%);
@@ -938,9 +938,9 @@
   position: absolute;
   z-index: 100;
   top: -4px;
-  right: -29px;
+  right: -28px;
   width: 59px;
-  height: 2px;
+  height: 5px;
   background: #c2c2c2;
   content: "";
   transform: rotate(45deg);
@@ -963,48 +963,10 @@
   right: -2px;
   bottom: 0px;
   left: 0px;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #25f895 1px,
-    transparent 4px,
-    transparent 7px,
-    #25f895 7px,
-    #25f895 10px,
-    transparent 10px,
-    #25f895 13px,
-    #25f895 16px,
-    transparent 16px,
-    #25f895 19px,
-    #25f895 20px,
-    transparent 20px,
-    #25f895 23px,
-    transparent 23px,
-    #25f895 24px,
-    #25f895 25px,
-    transparent 25px,
-    #25f895 26px,
-    #25f895 37px,
-    transparent 37px,
-    #25f895 38px,
-    #25f895 41px,
-    transparent 41px,
-    #25f895 42px,
-    #25f895 45px,
-    transparent 45px,
-    #25f895 46px,
-    #25f895 49px,
-    transparent 49px,
-    #25f895 50px,
-    #25f895 53px,
-    transparent 53px,
-    #25f895 54px
-  );
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 52px 2px;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent 0%, #25f895 10%, #25f895 100%);
   content: "";
-  mask-image: linear-gradient(to left, transparent 40%, #0a0a0a 99%, #0a0a0a 100%);
+  mask-image: linear-gradient(to left, transparent 50%, #0a0a0a 99%, #0a0a0a 100%);
 }
 
 .tinybirdCircle {
@@ -1061,23 +1023,15 @@
   }
 }
 
-.tinybirdBracketLeft,
-.tinybirdBracketRight {
-  position: absolute;
-  z-index: 2;
-  width: 1px;
-  height: 1px;
-  background: #c2c2c2;
-}
-
 .tinybirdBracketLeft {
+  position: absolute;
   top: 60px;
   left: 60px;
   &:before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1px;
+    width: 0.5px;
     height: 8px;
     background: #c2c2c2;
     content: "";
@@ -1087,30 +1041,7 @@
     top: 0;
     left: 0;
     width: 8px;
-    height: 1px;
-    background: #c2c2c2;
-    content: "";
-  }
-}
-
-.tinybirdBracketRight {
-  right: 60px;
-  bottom: 60px;
-  &:before {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 1px;
-    height: 8px;
-    background: #c2c2c2;
-    content: "";
-  }
-  &:after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 8px;
-    height: 1px;
+    height: 0.5px;
     background: #c2c2c2;
     content: "";
   }
