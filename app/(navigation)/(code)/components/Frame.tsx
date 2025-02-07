@@ -271,7 +271,6 @@ const TinybirdFrame = () => {
       style={{ padding }}
     >
       {!showBackground && <div data-ignore-in-export className={styles.transparentPattern}></div>}
-      <span className={styles.tinybirdBracketLeft} data-grid></span>
       <div className={styles.tinybirdWindow}>
         <div className={styles.tinybirdHeader}>
           <div className={styles.tinybirdCircleText}>tb {">"}</div>
