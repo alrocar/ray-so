@@ -1020,7 +1020,7 @@ export const THEMES: { [index: string]: Theme } = {
     iconUrl: `${BASE_URL}${TinybirdLogoUrl.src}`,
     partner: true,
     lineNumbers: false,
-    font: "jetbrains-mono",
+    font: "ia-writer-mono",
     syntax: {
       light: convertToShikiTheme({
         foreground: "#151515",

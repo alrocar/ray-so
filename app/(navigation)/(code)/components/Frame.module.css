@@ -918,6 +918,7 @@
   position: relative;
   overflow: hidden;
   background: #151515;
+  font-family: var(--font-ia-writer-mono);
 }
 
 .tinybirdWindow {
@@ -930,7 +931,6 @@
 }
 
 .tinybirdWindow {
-  font-family: "JetBrains Mono", monospace;
   mask-image: linear-gradient(to bottom, #151515 70%, transparent 100%);
 }
 
