@@ -273,7 +273,7 @@ const TinybirdFrame = () => {
       {!showBackground && <div data-ignore-in-export className={styles.transparentPattern}></div>}
       <div className={styles.tinybirdWindow}>
         <div className={styles.tinybirdHeader}>
-          <div className={styles.tinybirdCircleText}>tb {">"}</div>
+          <div className={styles.tinybirdCircleText}>tb {"»"}</div>
           <div className={classNames(styles.fileName, styles.tinybirdFileName)} data-value={fileName}>
             <input
               type="text"
