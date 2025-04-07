@@ -917,7 +917,7 @@
 .tinybirdFrame {
   position: relative;
   overflow: hidden;
-  background: #151515;
+  background: #000000;
   font-family: var(--font-ia-writer-mono);
 }
 
@@ -926,12 +926,12 @@
   z-index: 1;
   border: 1px solid #c2c2c2;
   border-bottom: none;
-  background: #151515;
+  background: #000000;
   clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%);
 }
 
 .tinybirdWindow {
-  mask-image: linear-gradient(to bottom, #151515 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000000 70%, transparent 100%);
 }
 
 .tinybirdWindow::after {
@@ -954,7 +954,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 0 12px;
-  background: #151515;
+  background: #000000;
   gap: 8px;
 }
 
@@ -966,7 +966,7 @@
   height: 1px;
   background-image: linear-gradient(to right, transparent 0%, #27f795 10%, #27f795 100%);
   content: "";
-  mask-image: linear-gradient(to left, transparent 50%, #151515 99%, #151515 100%);
+  mask-image: linear-gradient(to left, transparent 50%, #0a0a0a 99%, #0a0a0a 100%);
 }
 
 .tinybirdCircle {
@@ -1015,11 +1015,11 @@
   }
 
   .tinybirdCircleText {
-    color: #151515;
+    color: #0a0a0a;
   }
 
   .tinybirdFileName {
-    color: #151515;
+    color: #0a0a0a;
   }
 
   .tinybirdHeader::before {
@@ -1027,15 +1027,15 @@
   }
 
   .tinybirdWindow {
-    border: 1px solid #151515;
+    border: 1px solid #0a0a0a;
   }
 
   .tinybirdWindow::after {
-    background: #151515;
+    background: #0a0a0a;
   }
 
   .tinybirdHeader::before {
-    background-image: linear-gradient(to right, transparent 0%, #151515 10%, #151515 100%);
-    mask-image: linear-gradient(to left, transparent 50%, #151515 99%, #151515 100%);
+    background-image: linear-gradient(to right, transparent 0%, #0a0a0a 10%, #0a0a0a 100%);
+    mask-image: linear-gradient(to left, transparent 50%, #0a0a0a 99%, #0a0a0a 100%);
   }
 }
